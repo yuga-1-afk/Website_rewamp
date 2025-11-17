@@ -11,11 +11,39 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+            defer
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+            defer
+        ></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
         <!-- Navbar -->
 
         <div class="navbar">
+            <!-- Navbar Mobile-->
+
+            <button class="menu_button">☰</button>
+            <div class="navbar_mobile">
+                <div class="navbar_mobile_links">
+                    <div class="mobile_link_close">
+                        <img src="" alt="" />
+                        <button class="close_button">✕</button>
+                    </div>
+                    <a class="navbar_link" href="">Home</a>
+                    <a class="navbar_link" href="">Baby Boys</a>
+                    <a class="navbar_link" href="">Baby Girls</a>
+                    <a class="navbar_link" href="">Newborn</a>
+                    <a class="navbar_link" href="">Collections</a>
+                    <a class="navbar_link" href="">Sale</a>
+                </div>
+            </div>
+
+            <!-- Navbar Big screens-->
             <img src="" alt="" />
             <div class="navbar_links">
                 <a class="navbar_link" href="">Home</a>
@@ -25,6 +53,7 @@
                 <a class="navbar_link" href="">Collections</a>
                 <a class="navbar_link" href="">Sale</a>
             </div>
+
             <div class="navbar_account">
                 <a href="" class="navbar_account_link">
                     <img
@@ -195,8 +224,13 @@
         </div>
 
         <!--Our Exclusive Collections -->
+
         <div class="our_exclusives">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <svg
+                class="wave_svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1440 320"
+            >
                 <path
                     fill="#40b5ff"
                     fill-opacity="1"
@@ -225,6 +259,222 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!--Why choose us section -->
+
+        <div class="why_choose_us_sections">
+            <h2>Why Choose Us</h2>
+
+            <div class="why_choose_us_section">
+                <div class="why_choose_us_section_sub1">
+                    <div class="why_choose_us_section_sub_icon1">
+                        <img
+                            src="./images/icons/fast-delivery.png"
+                            alt=""
+                            height="50"
+                            width="50"
+                        />
+                    </div>
+                    <h3>Fast delivery</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Impedit ea eius commodi, accusantium vel ab quod maxime,
+                        repellat cupiditate ipsum obcaecati quos blanditiis
+                        magnam ut. Provident ex natus illo quae!
+                    </p>
+                </div>
+                <div class="why_choose_us_section_sub2">
+                    <div class="why_choose_us_section_sub_icon2">
+                        <img
+                            src="./images/icons/cotton.png"
+                            alt=""
+                            height="50"
+                            width="50"
+                        />
+                    </div>
+                    <h3>100% cotton</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Impedit ea eius commodi, accusantium vel ab quod maxime,
+                        repellat cupiditate ipsum obcaecati quos blanditiis
+                        magnam ut. Provident ex natus illo quae!
+                    </p>
+                </div>
+                <div class="why_choose_us_section_sub3">
+                    <div class="why_choose_us_section_sub_icon3">
+                        <img
+                            src="./images/icons/credit-card.png"
+                            alt=""
+                            height="50"
+                            width="50"
+                        />
+                    </div>
+                    <h3>Secure Payments</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Impedit ea eius commodi, accusantium vel ab quod maxime,
+                        repellat cupiditate ipsum obcaecati quos blanditiis
+                        magnam ut. Provident ex natus illo quae!
+                    </p>
+                </div>
+                <div class="why_choose_us_section_sub4">
+                    <div class="why_choose_us_section_sub_icon4">
+                        <img
+                            src="./images/icons/return.png"
+                            alt=""
+                            height="50"
+                            width="50"
+                        />
+                    </div>
+                    <h3>Easy Returns</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Impedit ea eius commodi, accusantium vel ab quod maxime,
+                        repellat cupiditate ipsum obcaecati quos blanditiis
+                        magnam ut. Provident ex natus illo quae!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Banner Section -->
+
+        <div class="cta_banner">
+            <div class="cta_banner_sections">
+                <div class="cta_banner_section1">
+                    <h2 class="cta_banner_section_heading">
+                        Soft, Stylish, Baby-Perfect
+                    </h2>
+                    <p class="cta_banner_section_subheading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maiores quam perspiciatis quis exercitationem? Debitis
+                        assumenda obcaecati, vitae tempora numquam tempore, quam
+                        ullam vero nesciunt nam quos animi perspiciatis ad
+                        commodi?
+                    </p>
+                    <button class="cta_banner_button">Shop Now</button>
+                </div>
+                <div class="cta_banner_section2">
+                    <img
+                        class="cta_banner_baby"
+                        src="./images/cta_banner/cta_banner_baby.png"
+                        alt=""
+                    />
+                </div>
+                <img
+                    class="cta_banner_deco1"
+                    src="./images/cta_banner/shooting-star.png"
+                    alt=""
+                />
+                <img
+                    class="cta_banner_deco2"
+                    src="./images/cta_banner/storm.png"
+                    alt=""
+                />
+            </div>
+        </div>
+
+        <!--Testimonials-->
+
+        <div class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonials_sub testimonials_slider">
+                <div class="testimonial_background testimonial_slide">
+                    <div class="testimonial" style="background-color: white">
+                        <img
+                            src="./images//testimonials/quotes.png"
+                            alt=""
+                            height="50"
+                            width="50"
+                        />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Numquam nam nulla voluptas totam natus
+                            laboriosam, possimus molestiae placeat vel
+                            necessitatibus. Ipsum doloremque aliquam excepturi
+                            exercitationem itaque molestiae voluptate facilis
+                            libero?
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial_background testimonial_slide">
+                    <div class="testimonial" style="background-color: white">
+                        <img
+                            src="./images//testimonials/quotes.png"
+                            alt=""
+                            height="50"
+                            width="50"
+                        />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Numquam nam nulla voluptas totam natus
+                            laboriosam, possimus molestiae placeat vel
+                            necessitatibus. Ipsum doloremque aliquam excepturi
+                            exercitationem itaque molestiae voluptate facilis
+                            libero?
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial_background testimonial_slide">
+                    <div class="testimonial" style="background-color: white">
+                        <img
+                            src="./images//testimonials/quotes.png"
+                            alt=""
+                            height="50"
+                            width="50"
+                        />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Numquam nam nulla voluptas totam natus
+                            laboriosam, possimus molestiae placeat vel
+                            necessitatibus. Ipsum doloremque aliquam excepturi
+                            exercitationem itaque molestiae voluptate facilis
+                            libero?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+
+        <div class="footer">
+            <div class="footer_links">
+                <a class="navbar_link" href="">Home</a>
+                <a class="navbar_link" href="">Baby Boys</a>
+                <a class="navbar_link" href="">Baby Girls</a>
+                <a class="navbar_link" href="">Newborn</a>
+                <a class="navbar_link" href="">Collections</a>
+                <a class="navbar_link" href="">Sale</a>
+            </div>
+            <hr class="footer_line" />
+            <div class="footer_links">
+                <a class="navbar_link" href="">Home</a>
+                <a class="navbar_link" href="">Baby Boys</a>
+                <a class="navbar_link" href="">Baby Girls</a>
+                <a class="navbar_link" href="">Newborn</a>
+                <a class="navbar_link" href="">Collections</a>
+                <a class="navbar_link" href="">Sale</a>
+            </div>
+            <hr class="footer_line" />
+            <div class="footer_links">
+                <a class="navbar_link" href="">Home</a>
+                <a class="navbar_link" href="">Baby Boys</a>
+                <a class="navbar_link" href="">Baby Girls</a>
+                <a class="navbar_link" href="">Newborn</a>
+                <a class="navbar_link" href="">Collections</a>
+                <a class="navbar_link" href="">Sale</a>
+            </div>
+            <hr class="footer_line" />
+            <div class="footer_links">
+                <a class="navbar_link" href="">Home</a>
+                <a class="navbar_link" href="">Baby Boys</a>
+                <a class="navbar_link" href="">Baby Girls</a>
+                <a class="navbar_link" href="">Newborn</a>
+                <a class="navbar_link" href="">Collections</a>
+                <a class="navbar_link" href="">Sale</a>
             </div>
         </div>
     </body>
