@@ -700,12 +700,30 @@ h4 {
         width: 150px;
         top: 40%;
         right: 10%;
+        animation-name: mobile_banner_deco2_animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
+
     .banner_deco1 {
         height: 100px;
         width: 100px;
         top: 10%;
         left: 0%;
+    }
+
+    .hero_banner_section1 {
+        margin-left: 10px;
+    }
+
+    @keyframes mobile_banner_deco2_animation {
+        from {
+            top: 100px;
+        }
+        to {
+            top: 120px;
+        }
     }
 
     /* -------------------------Shop by category --------------------------------- */
@@ -719,16 +737,16 @@ h4 {
         gap: 24px;
     }
     .shop_by_category_card_1 {
-        width: 350px;
-        height: 330px;
+        width: 300px;
+        height: 300px;
     }
     .shop_by_category_card_2 {
-        width: 350px;
-        height: 330px;
+        width: 300px;
+        height: 300px;
     }
     .shop_by_category_card_3 {
-        width: 350px;
-        height: 330px;
+        width: 300px;
+        height: 300px;
     }
     .shop_by_category_button {
         font-size: 12px;
@@ -868,6 +886,21 @@ h4 {
         width: 100px;
         top: 32%;
         right: 5%;
+        animation-name: mobile_cta_banner_deco1_animation;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        animation-direction: alternate;
+    }
+
+    @keyframes mobile_cta_banner_deco1_animation {
+        from {
+            right: 10px;
+            top: 10px;
+        }
+        to {
+            right: 50px;
+            top: 50px;
+        }
     }
     .cta_banner {
         height: 100%;

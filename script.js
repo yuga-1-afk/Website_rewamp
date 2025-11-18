@@ -42,15 +42,6 @@ gsap.from(".hero_banner", {
     duration: 2,
 });
 
-gsap.from(".banner_deco1", {
-    repeat: -1,
-    rotation: 160,
-    left: "500px",
-    duration: 2,
-    yoyo: true,
-    ease: "bounce",
-});
-
 const timeline = gsap.timeline({
     scrollTrigger: {
         trigger: ".shop_by_category",
@@ -111,3 +102,29 @@ timeline
     })
     .from(".footer", { width: 0, opacity: 0 })
     .from(".footer_links", { opacity: 0, stagger: 0.2 });
+
+/* --------------------- GSAP Animation for mobile ----------------------------- */
+
+let mm = gsap.matchMedia();
+
+mm.add("(max-width:480px)", () => {
+    gsap.from(".banner_deco1", {
+        repeat: -1,
+        rotation: 160,
+        left: "100px",
+        duration: 2,
+        yoyo: true,
+        ease: "bounce",
+    });
+});
+
+mm.add("(min-width:601px)", () => {
+    gsap.from(".banner_deco1", {
+        repeat: -1,
+        rotation: 160,
+        left: "600px",
+        duration: 2,
+        yoyo: true,
+        ease: "bounce",
+    });
+});
