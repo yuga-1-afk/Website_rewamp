@@ -765,11 +765,11 @@ h4 {
         font-size: 18px;
     }
     .featured_products_card {
-        width: 150px !important;
+        width: 150px;
         height: 200px;
     }
     .featured_products_card_img {
-        width: 150px !important;
+        width: 150px;
         height: 100px;
     }
     .featured_products_card_title h3 {
@@ -909,7 +909,7 @@ h4 {
     /* ----------- Testimonials ---------------- */
 
     .testimonial {
-        width: 350px;
+        width: 300px;
     }
     .testimonials_slider {
         display: flex;
