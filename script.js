@@ -45,9 +45,9 @@ gsap.from(".hero_banner", {
 const timeline = gsap.timeline({
     scrollTrigger: {
         trigger: ".shop_by_category",
-        start: "20% 90%",
-        end: "25% 50%",
-        markers: true,
+        start: "10% 90%",
+        end: "105% 50%",
+        markers: false,
     },
 });
 
