@@ -92,7 +92,11 @@ timeline
         ".why_choose_us_section_sub1,.why_choose_us_section_sub2,.why_choose_us_section_sub3,.why_choose_us_section_sub4",
         { scale: 0, duration: 1, stagger: 0.2, ease: "bounce" }
     )
-    .from(".cta_banner", { x: "100%", duration: 1, opacity: 0 })
+    .from(".cta_banner", {
+        x: "100%",
+        duration: 1,
+        opacity: 0,
+    })
     .from(".testimonials", { y: 200, duration: 1, opacity: 0 })
     .from(".testimonial_background", {
         y: 200,
